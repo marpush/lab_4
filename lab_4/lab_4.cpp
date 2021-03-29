@@ -39,7 +39,7 @@ void calculates_exponent(const double argument)
 {
 	double exp = 0;
 	for (int index = 0; index < BORDER; index++) {
-		exp = pow(argument, index) / calculates_factorial(index);
+		exp = (pow(argument, index) / calculates_factorial(index)) + exp;
 	}
 	cout << "Значение экспоненты равно: " << exp;
 }
